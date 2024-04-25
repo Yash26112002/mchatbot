@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Reviews</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.4.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/sentiment@2.0.1/dist/index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Product Reviews</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="product-link">Product Link:</label>
+                <input type="text" class="form-control" id="product-link">
+              </div>
+              <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title" id="product-name"></h5>
+            <p class="card-text" id="product-price"></p>
+            <img src="" id="product-image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Reviews</h5>
+            <div id="reviews"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Sentiment Analysis</h5>
+            <div id="sentiment-chart"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // JavaScript code to handle form submission, web scraping, and sentiment analysis
+    // would go here
+  </script>
+</body>
+</html>
